@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+ <style>
+    body {
+      background-color: blanchedalmond;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 36px;
+      color: #2f2f2f;
+       font-family: 'Times New Roman', serif;
+    }
+
+    hr {
+      width: 50%;
+      margin: 10px auto 30px;
+      border: 1px solid #444;
+    }
+
+    .collection-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      
+    }
+
+    .product-card {
+      background-color: #fffaf0;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 15px;
+      max-width: 240px;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .product-card img {
+      width: 200px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card a {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #ff6347;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .product-card a:hover {
+      background-color: #e53935;
+      transform: scale(1.1);
+    }
+   
+    .product-name {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+    }
+
+    @media (max-width: 600px) {
+      .product-card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <h2>T-Shirts Collection</h2>
+  <hr />
+
+  <div class="collection-container">
+
+    
+    <!-- here T-shirts photos ans deatils are uploaded-->
+
+    <div class="product-card">
+      <img src="t shirt/t4.webp" alt="T-Shirt 1" />
+      <div class="product-name"><b>Hanuman Oversized T-shirt for Men</b></div>
+      <div class="product-desc">Unique hanuman jii print with unique desgin.</div>
+      <p>
+        <a href="https://www.damakdam.com/products/hanuman-oversized-t-shirt-for-men-1?variant=43567758737600">Buy now</a>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <img src="t shirt/download.jpg" alt="T-Shirt 2" />
+      <p>
+         <div class="product-name"><b>Unstoppable - Reflective Print</b></div>
+      <div class="product-desc">Unique print black oversize t-shirt.</div>
+        <a href="https://www.mydesignation.com/products/unstoppable-oversized-tshirt-reflective-print">Buy now</a>
+      </p>
+    </div>
+
+    <div class="product-card">
+      <img src="t shirt/ts2.jpg" alt="T-Shirt 3 Front" />
+      <div class="product-name"><b>Trippy Graphic T-Shirt</b></div>
+      <div class="product-desc">Unique psychedelic print with vibrant colors. Dual angle views shown.</div>
+      <p>
+        <a href="https://www.amazon.in/VLAM-Trendy-Spirit-Unique-Trippy/dp/B0CL3J6ZRB?th=1&psc=1">Buy now</a>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blanchedalmond;
+    text-align: center;
+     font-family: 'Times New Roman', serif;
+}
+
+/* Logo Styling */
+.logo-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.logo-top img {
+    width: 180px;
+    height: auto;
+}
+
+/* Product Section Styling */
+.shirts, .jeans, .t-shirt, .winter, .shoes {
+    display: inline-block;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px 20px;
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     font-family: 'Times New Roman', serif;
+}
+
+.shirts:hover,
+.jeans:hover,
+.t-shirt:hover,
+.winter:hover,
+.shoes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.shirts img,
+.jeans img,
+.t-shirt img,
+.winter img,
+.shoes img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Text and Links */
+p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+     font-family: 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+     font-family: 'Times New Roman', serif;
+}
+
+a:hover p {
+    color: #e60023;
+}
+
+hr {
+    width: 60%;
+    margin: 10px auto 0 auto;
+    border: 1px solid #ccc;
+     font-family: 'Times New Roman', serif;
+}
+
+
+
+
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .shirts, .jeans, .t-shirt, .winter,.shoes {
+        display: block;
+        margin: 20px auto;
+    }
+}

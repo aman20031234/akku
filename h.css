@@ -1,0 +1,196 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+     font-family: 'Times New Roman', serif;
+}
+
+/* Header Table */
+table {
+    width: 100%;
+    background-color: blanchedalmond;
+    padding: 20px 0;
+    border-collapse: collapse;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+     font-family: 'Times New Roman', serif;
+}
+
+/* Logo */
+table td:first-child img {
+    padding-left: 20px;
+    height: 80px;
+     font-family: 'Times New Roman', serif;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search input[type="text"] {
+    padding: 10px 18px;
+    font-size: 15px;
+    width: 50%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    background-color: #fafafa;
+}
+
+.search input[type="text"]:focus {
+    border-color: #b47b4e;
+    background-color: #fff;
+}
+
+.search input[type="submit"] {
+    padding: 10px 22px;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: #b47b4e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search input[type="submit"]:hover {
+    background-color: #9f643c;
+}
+
+/* Navigation Links */
+td a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background-color: #f0e3d1;
+    color: #b47b4e;
+}
+
+/* Icons */
+td img[alt="icon"] {
+    vertical-align: middle;
+    margin-right: 6px;
+    height: 32px;
+    width: auto;
+}
+
+/* Product Gallery */
+.main-body {
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.main-body img {
+    width: 230px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-body img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #fdf6ec;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 17px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Footer */
+footer {
+    background-color: #e2e2e2;
+    color: #555;
+    text-align: center;
+    padding: 18px;
+    font-size: 15px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Main Heading */
+h1 {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-size: 40px;
+    color: #4d4d4d;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table, tr, td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .search input[type="text"],
+    .search input[type="submit"] {
+        width: 90%;
+        max-width: none;
+    }
+
+    .main-body img {
+        width: 90%;
+        height: auto;
+    }
+
+    .main-body {
+        padding: 30px 10px;
+    }
+}
